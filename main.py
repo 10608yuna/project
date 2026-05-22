@@ -13,7 +13,7 @@ a=ellipsoid(pos=vec(203,32,13), length=3.5, height=2, width=2, color=vec((249)/2
 b=ellipsoid(pos=vec(197,32,13), length=3.5, height=2, width=2, color=vec((249)/255, (165)/255, (158)/255),group=bunpel)
 ink=box(pos = vec(200,10.3,10),size = vec(4,4,4),color=vec((0)/255, (0)/255, (0)/255),(make_trail=True),group=bunpel)
 
-bunpel = compound([body,eye,eyet,a,b,ink], pos=vector(-90, 0, 6))
+bupel.pos=vector(-90, 0, 6)
 
 === 움직임 ===
 while True :
