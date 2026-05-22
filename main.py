@@ -11,9 +11,10 @@ eye=sphere(pos = vec(200,10,10),color=vec((0)/255, (0)/255, (0)/255),pos = vec(2
 eyet=sphere(pos = vec(200,10,10),color=vec((0)/255, (0)/255, (0)/255),pos = vec(198,34,13),group=bunpel)
 a=ellipsoid(pos=vec(203,32,13), length=3.5, height=2, width=2, color=vec((249)/255, (165)/255, (158)/255),group=bunpel)
 b=ellipsoid(pos=vec(197,32,13), length=3.5, height=2, width=2, color=vec((249)/255, (165)/255, (158)/255),group=bunpel)
-ink=box(pos = vec(200,10.3,10),size = vec(4,4,4),color=vec((0)/255, (0)/255, (0)/255),(make_trail=True),group=bunpel)
+ink=box(pos = vec(200,10.3,10),size = vec(4,4,4),color=vec((0)/255, (0)/255, (0)/255),group=bunpel,make_trail=True)
 
-bupel.pos=vector(-90, 0, 6)
+bunpel.pos = vec(-285, 0, 6)
+ink=(make_trail=True)
 
 === 움직임 ===
 while True :
@@ -30,5 +31,4 @@ while True :
 
 ==== 선 그리기 ===
 
-        
         
