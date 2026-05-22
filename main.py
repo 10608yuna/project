@@ -9,7 +9,7 @@ eye=sphere(pos = vec(200,10,8),color=vec((0)/255, (0)/255, (0)/255),pos = vec(20
 eyet=sphere(pos = vec(200,10,8),color=vec((0)/255, (0)/255, (0)/255),pos = vec(198,34,13))
 a=ellipsoid(pos=vec(203,32,11), length=3.5, height=2, width=2, color=vec((249)/255, (165)/255, (158)/255))
 b=ellipsoid(pos=vec(197,32,11), length=3.5, height=2, width=2, color=vec((249)/255, (165)/255, (158)/255))
-ink=box(pos = vec(200,11,10), color=vec((0)/255, (0)/255, (0)/255))
+ink=box(pos = vec(200,11,10), color=vec((0)/255, (0)/255, (0)/255),make_trail = True)
 bunpel = compound([body,eye,eyet,a,b,ink], pos=vector(-90, 0, 6))
 
 === 움직임 ===
@@ -30,4 +30,5 @@ while True :
     rate(100)
     k = keysdown()
     if ' ' in k :
+        
         
