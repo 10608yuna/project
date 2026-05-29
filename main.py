@@ -41,9 +41,9 @@ while True:
 
  # z 박스 안에있음?
     inside_z = (
-        z.pos.x - z.size.x/2 < ink.pos.x < z.pos.x + z.size.x/2
+        z.pos.x - z.size.x/2 <= ink.pos.x <= z.pos.x + z.size.x/2
         and
-        z.pos.y - z.size.y/2 < ink.pos.y < z.pos.y + z.size.y/2
+        z.pos.y - z.size.y/2 <= ink.pos.y <= z.pos.y + z.size.y/2
     )
 
     # z 안에서만 trail
