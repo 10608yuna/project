@@ -23,6 +23,15 @@ YY = sphere(pos=vector(70, 3, 10), radius=7, color=color.yellow)
 GG = sphere(pos=vector(70, -13, 10), radius=7, color=color.green)
 EE = sphere(pos=vector(70, -29, 10), radius=7)
 
+=== 글자 추가 ===
+
+text(text='Press the spacebar to draw lines in the white box!\nPress R for red, B for blue,\nG for green, Y for yellow.\nPress E to clear everything', align='center', color=color.white,pos = vec (0,-60,15),height=6)
+text(text='R', align='center', color=color.white,pos = vec (70, 33, 17),height=6)
+text(text='B', align='center', color=color.white,pos = vec (70, 17,17),height=6)
+text(text='Y', align='center', color=color.white,pos = vec (70, 1, 17),height=6)
+text(text='G', align='center', color=color.white,pos = vec (70, -15, 17),height=6)
+text(text='E', align='center', color=color.black,pos = vec (70, -31, 17),height=6)
+
 === 움직임 ===
 
 while True:
