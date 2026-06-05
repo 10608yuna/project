@@ -1,22 +1,19 @@
 Web VPython 3.2
-box(size = vec(160,90,3),color=vec((255)/255, (133)/255, (144)/255))
-box(size = vec(130,75,5)compound([body, head], pos=vector(0, 0, 0)))
-box(size = vec(135,80,4.5),pos = vec (-6.5,1.5,0),color=vec((182)/255, (44)/255, (55)/255))
+x=box(size = vec(160,90,23),color=vec((255)/255, (133)/255, (144)/255))
+z=box(size = vec(130,75,25),pos = vec (-6.5,1.5,0))
+y=box(size = vec(135,80,24.5),pos = vec (-6.5,1.5,0),color=vec((182)/255, (44)/255, (55)/255))
 
 board = compound([x,z,y])
 
 ==== 분필이 ===
 bunpel = group()
 
-box(size = vec(160,90,3),color=vec((255)/255, (133)/255, (144)/255))
-box(size = vec(130,75,5),pos = vec (-6.5,1.5,0))
-box(size = vec(135,80,4.5),pos = vec (-6.5,1.5,0),color=vec((182)/255, (44)/255, (55)/255))
-body=cylinder(pos = vec(-85,10,7),size = vec(30,7,7),axis=vec(0, 1, 0),group=bunpel)
-eye=sphere(pos = vec(-87,34,10),color=vec((0)/255, (0)/255, (0)/255),group=bunpel)
-eyet=sphere(pos = vec(-83,34,10),color=vec((0)/255, (0)/255, (0)/255),group=bunpel)
-a=ellipsoid(pos=vec(-82,32,10), length=3.5, height=2, width=2, color=vec((249)/255, (165)/255, (158)/255),group=bunpel)
-b=ellipsoid(pos=vec(-88,32,10), length=3.5, height=2, width=2, color=vec((249)/255, (165)/255, (158)/255),group=bunpel)
-ink=box(pos = vec(-85,11,7),size = vec(1,1,1),color=vec(0.5,1,0),make_trail=True)
+body=cylinder(pos = vec(-85,10,15),size = vec(30,7,7),axis=vec(0, 1, 0),group=bunpel)
+eye=sphere(pos = vec(-87,34,18),color=vec((0)/255, (0)/255, (0)/255),group=bunpel)
+eyet=sphere(pos = vec(-83,34,18),color=vec((0)/255, (0)/255, (0)/255),group=bunpel)
+a=ellipsoid(pos=vec(-82,32,18), length=3.5, height=2, width=2, color=vec((249)/255, (165)/255, (158)/255),group=bunpel)
+b=ellipsoid(pos=vec(-88,32,18), length=3.5, height=2, width=2, color=vec((249)/255, (165)/255, (158)/255),group=bunpel)
+ink=box(pos = vec(-85,11,6),size = vec(1,1,1),color=vec(1,1,1),make_trail=False)
 
 === 움직임 ===
 
@@ -37,7 +34,7 @@ while True:
         bunpel.pos.y -= 0.5
 
     # 위치 맞추기
-    ink.pos = bunpel.pos + vec(-85,11,6)
+    ink.pos = bunpel.pos + vec(-85,11,14)
 
     # z 박스 안에있음?
     in_z = (
