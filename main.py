@@ -15,6 +15,14 @@ a=ellipsoid(pos=vec(-82,32,18), length=3.5, height=2, width=2, color=vec((249)/2
 b=ellipsoid(pos=vec(-88,32,18), length=3.5, height=2, width=2, color=vec((249)/255, (165)/255, (158)/255),group=bunpel)
 ink=box(pos = vec(-85,11,6),size = vec(1,1,1),color=vec(1,1,1),make_trail=False)
 
+=== 깔공 추가 ===
+
+RR = sphere(pos=vector(70, 35, 10), radius=7, color=color.red)
+BB = sphere(pos=vector(70, 19, 10), radius=7, color=color.blue)
+YY = sphere(pos=vector(70, 3, 10), radius=7, color=color.yellow)
+GG = sphere(pos=vector(70, -13, 10), radius=7, color=color.green)
+EE = sphere(pos=vector(70, -29, 10), radius=7)
+
 === 움직임 ===
 
 while True:
