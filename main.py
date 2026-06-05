@@ -39,15 +39,15 @@ while True:
     # 위치 맞추기
     ink.pos = bunpel.pos + vec(-85,11,6)
 
- # z 박스 안에있음?
-    inside_z = (
+    # z 박스 안에있음?
+    in_z = (
         z.pos.x - z.size.x/2 <= ink.pos.x <= z.pos.x + z.size.x/2
         and
         z.pos.y - z.size.y/2 <= ink.pos.y <= z.pos.y + z.size.y/2
     )
 
     # z 안에서만 trail
-    if ' ' in k and inside_z:
+    if ' ' in k and in_z:
         ink.make_trail = True
     else:
         ink.make_trail = False
@@ -56,16 +56,16 @@ while True:
     # E 누르면 trail 삭제
     if 'e' in k:
         ink.clear_trail()
-    # R 누르면 trail 색 red
+     # R red
     if 'r' in k:
         ink.trail_color = color.red
-    # B 누르면 trail 색 blue
+    # B blue
     if 'b' in k:
         ink.trail_color = color.blue
-    # y 누르면 trail 색 yellow
+    # y yellow
     if 'y' in k:
         ink.trail_color = color.yellow
-    # g 누르면 trail 색 green
+    # g green
     if 'g' in k:
         ink.trail_color = color.green
 
