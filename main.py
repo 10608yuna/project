@@ -13,7 +13,7 @@ eye=sphere(pos = vec(-87,34,18),color=vec((0)/255, (0)/255, (0)/255),group=bunpe
 eyet=sphere(pos = vec(-83,34,18),color=vec((0)/255, (0)/255, (0)/255),group=bunpel)
 a=ellipsoid(pos=vec(-82,32,18), length=3.5, height=2, width=2, color=vec((249)/255, (165)/255, (158)/255),group=bunpel)
 b=ellipsoid(pos=vec(-88,32,18), length=3.5, height=2, width=2, color=vec((249)/255, (165)/255, (158)/255),group=bunpel)
-ink=box(pos = vec(-85,11,6),size = vec(1,1,1),color=vec(1,1,1),make_trail=False)
+ink=box(pos = vec(-85,11,6),size = vec(1,1,1),color=vec(0,0,0),make_trail=False)
 
 === 깔공 추가 ===
 
